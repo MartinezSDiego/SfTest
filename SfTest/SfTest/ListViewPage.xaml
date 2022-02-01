@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SfTest.ListViewPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:listview="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+    x:Name="PageListView">
+    <ContentPage.Content>
+        <listview:SfListView
+            x:Name="ListOfMonths"
+            Margin="0,20,0,0"
+            AutoFitMode="DynamicHeight"
+            BackgroundColor="White"
+            BindingContext="{x:Reference PageListView}"
+            HeightRequest="50"
+            ItemSpacing="15,0,10,0"
+            ItemsSource="{Binding MonthsList}"
+            Orientation="Horizontal"
+            VerticalOptions="Start">
+            <listview:SfListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid
+                        Margin="0"
+                        Padding="0"
+                        ColumnSpacing="0"
+                        RowSpacing="0">
+                        <Frame
+                            Margin="0"
+                            Padding="0"
+                            BorderColor="Black"
+                            HorizontalOptions="Fill"
+                            VerticalOptions="Fill" />
+                        <Label
+                            Text="{Binding Name}"
+                            TextColor="Black"
+                            VerticalOptions="Center" />
+                    </Grid>
+                </DataTemplate>
+            </listview:SfListView.ItemTemplate>
+        </listview:SfListView>
+    </ContentPage.Content>
+</ContentPage>

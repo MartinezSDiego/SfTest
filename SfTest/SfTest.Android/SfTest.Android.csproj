@@ -55,10 +55,15 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Syncfusion.Xamarin.SfCalendar">
-      <Version>19.2.0.51</Version>
+      <Version>19.3.0.47</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2083" />
+    <PackageReference Include="Syncfusion.Xamarin.SfListView">
+      <Version>19.3.0.47</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="Xamarin.Forms">
+      <Version>5.0.0.2196</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />

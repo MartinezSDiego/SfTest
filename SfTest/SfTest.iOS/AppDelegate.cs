@@ -1,3 +1,4 @@
+using Syncfusion.ListView.XForms.iOS;
 using Syncfusion.SfCalendar.XForms.iOS;
 using System;
 using System.Collections.Generic;
@@ -24,6 +25,7 @@ namespace SfTest.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
 global::Xamarin.Forms.Forms.Init();
+SfListViewRenderer.Init();
 SfCalendarRenderer.Init();
             LoadApplication(new App());
 
