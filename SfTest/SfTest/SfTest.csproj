@@ -13,6 +13,7 @@
   <ItemGroup>
     <PackageReference Include="Syncfusion.Xamarin.SfCalendar" Version="20.1.0.48" />
     <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="20.1.0.48" />
+    <PackageReference Include="Syncfusion.Xamarin.SfRotator" Version="20.1.0.48" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.2" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2401" />
   </ItemGroup>
