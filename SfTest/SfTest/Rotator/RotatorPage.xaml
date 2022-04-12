@@ -3,14 +3,39 @@
     x:Class="SfTest.Rotator.RotatorPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:rotator="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms">
+    xmlns:rotator="clr-namespace:SfTest.Rotator"
+    xmlns:sfRotator="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
+    xmlns:template="clr-namespace:SfTest.Rotator.Template"
+    x:DataType="rotator:RotatorViewModel">
     <ContentPage.Content>
-        <Grid>
-            <rotator:SfRotator
+        <Grid
+            HorizontalOptions="Fill"
+            VerticalOptions="Fill">
+            <Grid.RowDefinitions>
+                <RowDefinition
+                    Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition
+                    Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <sfRotator:SfRotator
                 x:Name="rotator"
                 BackgroundColor="Green"
+                DotPlacement="OutSide"
+                DotsBorderColor="Transparent"
                 HeightRequest="160"
-                NavigationDirection="Horizontal" />
+                ItemsSource="{Binding Items}"
+                NavigationDirection="Horizontal"
+                SelectedDotColor="Blue"
+                UnselectedDotColor="White">
+                <sfRotator:SfRotator.ItemTemplate>
+                    <DataTemplate>
+                        <template:CustomRotatorItem />
+                    </DataTemplate>
+                </sfRotator:SfRotator.ItemTemplate>
+            </sfRotator:SfRotator>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
