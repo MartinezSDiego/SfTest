@@ -5,3 +5,4 @@ SfTest/SfTest.Android/obj
 SfTest/SfTest.iOS/bin
 SfTest/SfTest.iOS/obj
 .vs
+*.user
