@@ -10,8 +10,7 @@ namespace SfTest
         {
             InitializeComponent();
 
-            MainPage = new CalendarPage();
-            //MainPage = new ListViewPage();
+            MainPage = new NavigationPage(new DashboardPage());
         }
 
         protected override void OnStart()

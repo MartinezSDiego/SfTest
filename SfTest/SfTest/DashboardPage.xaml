@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SfTest.DashboardPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                Margin="0,20,0,10"
+                FontSize="30"
+                HorizontalOptions="Center"
+                Text="Select the Page"
+                VerticalOptions="Start" />
+
+            <Button
+                Clicked="Button_Clicked_2"
+                HorizontalOptions="Fill"
+                Text="List Page" />
+            
+            <Button
+                Clicked="Button_Clicked"
+                HorizontalOptions="Fill"
+                Text="Calendar Page" />
+
+            <Button
+                Clicked="Button_Clicked_1"
+                HorizontalOptions="Fill"
+                Text="Rotator Page" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

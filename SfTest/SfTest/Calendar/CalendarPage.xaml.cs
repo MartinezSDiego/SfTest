@@ -2,7 +2,7 @@
 using System;
 using Xamarin.Forms;
 
-namespace SfTest
+namespace SfTest.Calendar
 {
     public partial class CalendarPage : ContentPage
     {
